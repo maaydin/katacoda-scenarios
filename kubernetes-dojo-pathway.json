@@ -1,0 +1,33 @@
+{
+    "title": "Kubernetes Dojo",
+    "description": "Scenarios for the Kubernetes Dojo by kloia",
+    "icon": "fa-kubernetes",
+    "courses": [
+      {
+        "course_id": "docker",
+        "title": "Docker Fundamentals",
+        "description": "Base knowledge for containers and docker"
+      },
+      {
+        "course_id": "kubernetes-basics",
+        "title": "Kubernetes Basics",
+        "description": "Understanding Kubernetes Basics"
+      },
+      {
+        "course_id": "kubernetes-cluster",
+        "title": "Kubernetes Cluster",
+        "description": "Multi node Kubernetes cluster configured using Kubeadm"
+      },
+      {
+        "course_id": "kubernetes-advanced",
+        "title": "Kubernetes Advanced",
+        "description": "Understanding Kubernetes in Detail"
+      },
+      {
+        "course_id": "application-deployment",
+        "title": "Application Deployment",
+        "description": "Real-Life Application Deployment on GKE"
+      }
+    ]
+  }
+  
