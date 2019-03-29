@@ -1,9 +1,7 @@
 Create a namespace with your name.
 
-Clone the microservices-demo repository https://github.com/microservices-demo/microservices-demo.
+Change your default namespace with newly created one.
 
-Go to deploy/kubernetes folder.
-
-Change all namespace settings at complete-demo.yaml manifesto.
+Clone the example-voting-app repository https://github.com/dockersamples/example-voting-app.
 
 Deploy the application.

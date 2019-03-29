@@ -46,7 +46,7 @@ Update volume as a hostpath volume
 - First create a directory and an index.html file in it.
 
 `mkdir -p /tmp/hostmount`{{execute}}.
-`echo "<h1>Hostmount</h1>" /tmp/hostmount/index.html`{{execute}}.
+`echo "<h1>Hostmount</h1>" >> /tmp/hostmount/index.html`{{execute}}.
 
 <pre class="file" data-filename="webserver-dev.yml" data-target="replace">
 apiVersion: apps/v1
@@ -95,11 +95,6 @@ https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com/
 `kubectl delete pod -l app=B2B`{{execute}}.
 
 Create a persistent volume
-
-- First create a directory and an index.html file in it.
-
-`mkdir -p /tmp/pv`{{execute}}.
-`echo "<h1>Persistent Volume</h1>" /tmp/pv/index.html`{{execute}}.
 
 <pre class="file" data-filename="pv.yml" data-target="replace">
 apiVersion: v1
@@ -175,7 +170,9 @@ spec:
 
 `kubectl apply -f webserver-dev.yml`{{execute}}.
 
-Now nginx should serve the index.html at /tmp/hostmount
+`kubectl exec it <pod-id> -- bash`{{execute}}.
+
+Now nginx should serve the index.html at /tmp/pv
 https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com/
 
 Delete your pod and recreate a new nginx and check if index.html is the same

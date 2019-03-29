@@ -49,7 +49,7 @@ spec:
                 key: api_key
         envFrom:
           - configMapRef:
-              name: example-configmap
+              name: config
         volumeMounts:
           - name: html
             mountPath: /usr/share/nginx/html
@@ -104,7 +104,7 @@ spec:
                 key: api_key
         envFrom:
           - configMapRef:
-              name: example-configmap
+              name: config
         volumeMounts:
           - name: html
             mountPath: /usr/share/nginx/html

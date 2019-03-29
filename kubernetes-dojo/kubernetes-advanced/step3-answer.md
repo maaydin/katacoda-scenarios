@@ -47,7 +47,7 @@ spec:
   type: LoadBalancer
 </pre>
 
-`kubectl apply -f service.yml`{{execute}}.
+`kubectl apply -f loadbalancer.yml`{{execute}}.
 
 https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com/
 
@@ -77,7 +77,7 @@ spec:
 
 `kubectl apply -f ingress.yml`{{execute}}.
 `echo "127.0.0.1       ingress.demo" >> /etc/hosts`{{execute}}.
-`curl -v ingress.demo"`{{execute}}.
+`curl -v ingress.demo`{{execute}}.
 
 Check Endpoints of your service
 

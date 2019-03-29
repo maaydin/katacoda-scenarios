@@ -41,7 +41,7 @@ spec:
         image: nginx:1.10.3
         envFrom:
           - configMapRef:
-              name: example-configmap
+              name: config
         volumeMounts:
           - name: html
             mountPath: /usr/share/nginx/html
@@ -85,7 +85,7 @@ spec:
         image: nginx:1.10.3
         envFrom:
           - configMapRef:
-              name: example-configmap
+              name: config
         volumeMounts:
           - name: html
             mountPath: /usr/share/nginx/html
