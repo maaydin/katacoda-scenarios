@@ -1,15 +1,21 @@
-Secrets enable container images to be created without bundling sensitive data.
+ConfigMap is a map containing key/value pairs with the values ranging from short literals to full config files and it allows separating configuration options
 
 ## Katas
 
-Using kubectl, find the required fields of a pod object.
+Create a configmap with different values
 
-Create a secret with different values 
-  
-Db_password: xxxx
-Api_key: xxx
+Content should be:   
 
-Mount env vars to pod using secret 
+<pre>
+databasename: mydb
+database_uri: mydb://localhost:27017
+keys: |
+    image.tag=latest
+    userid:13
+</pre>
 
-Mount secret as volume to the path "/etc/secrets" in the pod  
+Mount a single env var to pod using configmap 
 
+Mount all env vars to pod using configmap 
+
+Mount configmap as volume to the pod

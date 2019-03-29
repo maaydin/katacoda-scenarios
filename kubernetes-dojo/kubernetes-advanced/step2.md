@@ -1,14 +1,15 @@
-Service is used to define a logical set of Pods and related policies used to access them.
+Deployments are intended to replace Replication Controllers.  They provide the same replication functions (through Replica Sets) and also the ability to rollout changes and roll them back if necessary.
+
+A Replication Controller is a structure that enables you to easily create multiple pods, then make sure that that number of pods always exists. If a pod does crash, the Replication Controller replaces it.
+
+Deployments are recommended, since they are declarative, server side, and have additional features, such as rolling back to any previous revision even after the rolling update is done.
 
 ## Katas
 
-Using kubectl, find the required fields of a service object
+Update deployment strategy for nginx as Recreate
 
-Expose B2B to cluster
+Update deployment to nginx version 1.10.3 using --record option
 
-Expose B2B to internet
+Update deployment strategy for nginx as RollingUpdate with max surge 20% and max unavailable 20%
 
-Check Endpoints of your service
-
-Check clusterip type service using port-forwarding 
-using localhost:8085
+Update deployment to nginx version 1.11.5 using --record option

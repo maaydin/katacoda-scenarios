@@ -1,25 +1,13 @@
-Deployment provides declarative updates for Pod/Pods
+Service is used to define a logical set of Pods and related policies used to access them.
 
 ## Katas
 
-Using kubectl, find the required fields of a deployment object
+Using kubectl, find the required fields of a service object
 
-Create nginx deployment with 1 replica
+Expose B2B to cluster
 
-Create nginx deployment with 3 replicas
+Expose B2B to internet by opening a node port on 30080
 
-Delete your pod
+Expose B2B to internet by creating an ingress
 
-Scale down from 3 to 1
-
-Create a nginx deployment with 10 replicas using nginx:1.10.3
-
-Apply the manifest with --record option
-
-Set the deployment image to nginx:1.11.5
-
-Review the rollout status
-
-Check the rollout history
-
-Rollback the first revision
+Check Endpoints of your service

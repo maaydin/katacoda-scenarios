@@ -1,21 +1,23 @@
-Volume is essentially a directory accessible to all containers running in a Pod. 
-Data on that filesystem will be destroyed when the container is restarted. Volumes let that a pod can write to a filesystem that exists as long as the pod exists.
+Deployment provides declarative updates for Pod/Pods.
 
+Note: A Deployment’s rollout is triggered if and only if the Deployment’s pod template (that is, .spec.template) is changed, for example if the labels or container images of the template are updated. Other updates, such as scaling the Deployment, do not trigger a rollout.
 
 ## Katas
 
-Create an emptyDir volume and mount it to nginx pod
+Using kubectl, find the required fields of a deployment object
 
-Create a persistent volume claim with 1GB
+Create nginx deployment with 1 replica
 
-Mount PVC to your nginx pod and create an index.html under /usr/share/nginx/html folder
+Create nginx deployment with 3 replicas
 
-Delete your pod and recreate a new nginx and check if index.html is the same
+Delete your pod
 
-Create a hostpath volume 
-<pre>hostPath:
-     path: "/tmp/nginx"</pre>
+Scale down from 3 to 1
 
+Update deployment to nginx version 1.10.3 with 10 replicas and review the rollout status
 
+Update deployment to nginx version 1.11.5 using --record option
 
+Check the rollout history
 
+Rollback the first revision
