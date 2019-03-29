@@ -14,8 +14,6 @@ keys: |
     userid:13
 </pre>
 
-Mount a single env var to pod using configmap 
-
 Mount all env vars to pod using configmap 
 
 Mount configmap as volume to the pod

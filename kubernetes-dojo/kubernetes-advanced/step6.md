@@ -2,12 +2,14 @@ Secrets enable container images to be created without bundling sensitive data.
 
 ## Katas
 
-Using kubectl, find the required fields of a pod object.
-
 Create a secret with different values 
   
-Db_password: xxxx
-Api_key: xxx
+Content should be:   
+
+<pre>
+api_secret: a2xvaWFkb2pvCg==
+api_key: YzJSbVpHZGxjbmQzTkdSb1ozTm1OalF6Cg==
+</pre>
 
 Mount env vars to pod using secret 
 

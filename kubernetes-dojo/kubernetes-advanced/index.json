@@ -45,7 +45,7 @@
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mWelcome to Kubernetes Dojo by kloia!\r\nThis is your Interactive Bash Terminal.\u001b[m\r\n"
   },
-  "files": ["webserver-dev.yml","service.yml","loadbalancer.yml","ingress.yml","pv.yml","pvc.yml"],
+  "files": ["webserver-dev.yml","service.yml","loadbalancer.yml","ingress.yml","pv.yml","pvc.yml","configmap.yml","secret.yml"],
   "backend": {
     "imageid": "minikube"
   }
