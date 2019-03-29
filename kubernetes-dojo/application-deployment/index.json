@@ -6,6 +6,18 @@
       {
         "title": "Step 1 - Kubectl Configuration for GKE",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Deploy Example Voting Application",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Expose App to the Internet",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Scale Application",
+        "text": "step4.md"
       }
     ],
     "finish": {
