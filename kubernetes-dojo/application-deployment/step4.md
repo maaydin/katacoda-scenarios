@@ -1,1 +1,1 @@
-Increase replication counts and rollout changes.
+Increase replica counts for voting and result applications.
