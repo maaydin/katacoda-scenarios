@@ -24,7 +24,7 @@
         "description": "Understanding Kubernetes in Detail"
       },
       {
-        "course_id": "application-deployment",
+        "course_id": "application-deployment-v2",
         "title": "Application Deployment",
         "description": "Real-Life Application Deployment on GKE"
       }
