@@ -56,6 +56,7 @@ spec:
       - name: nginx
         image: nginx
 </pre>
+
 `kubectl apply -f webserver-dev.yml`{{execute}}.
 `kubectl get deployments`{{execute}}.
 `kubectl get pods`{{execute}}.
