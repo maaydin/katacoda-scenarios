@@ -1,0 +1,1 @@
+Increase replica counts for voting and result applications.
