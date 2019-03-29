@@ -1,1 +1,1 @@
-Follow the instructions given by trainer.
+Follow the instructions given by trainer to connect to GKE.

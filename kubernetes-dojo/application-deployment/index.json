@@ -14,7 +14,9 @@
   },
   "environment": {
     "hideintro": true,
-    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Kubernetes Docs", "href": "https://kubernetes.io/docs/home/"}, {"name": "Minikube Docs", "href": "https://kubernetes.io/docs/setup/minikube/"}, {"name": "Example Voting App", "href": "https://github.com/dockersamples/example-voting-app"}],
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mWelcome to Kubernetes Dojo by kloia!\r\nThis is your Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
