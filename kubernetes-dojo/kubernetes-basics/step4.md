@@ -18,7 +18,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx"
+    image: nginx
 </pre>
 
 Create another pod with nginx container with below labels.
